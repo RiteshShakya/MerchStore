@@ -1,2 +1,6 @@
 # MerchStore
-By Ritesh Shakya 2018UIT2521
+Static Webpage for an online merch store
+*****************************************************************
+ https://riteshshakya.github.io/MerchStore/
+*****************************************************************
+By Ritesh Shakya 
