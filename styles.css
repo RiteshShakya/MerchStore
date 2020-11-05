@@ -1,5 +1,17 @@
 body {
     color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.image {
+    transition: 0.3s;
+    background-size: 100%;
+}
+.image:hover {
+
+    background-position: center;
+
+    transform: scale(1.05);
 }
 
 .search input {
@@ -28,7 +40,6 @@ body {
 
 .banner img {
     max-width: 100%;
-    margin-top: 50px;
 }
 
 @font-face {
@@ -37,13 +48,17 @@ body {
     font-style: normal;
 }
 
-header .logo {
+header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; 
+    margin: 30px auto;
+    padding-left: 70px;
+}
+
+header .logo {
     max-width: 10%;
     margin-left: 400px;
-    margin-top: 20px;
 }
 
 header .name {
@@ -54,8 +69,7 @@ header .name {
     font-size: 50px;
     font-weight: 400;
     text-shadow: 2px 2px #AAAAAA;
-    margin-top: -105px;
-    margin-left: 600px;
+    margin: 4px 30px;
 }
 
 .top-links {
@@ -85,95 +99,20 @@ header .name {
     color: #D3AF5F
 }
 
-.tab3 {
-    font-family: helvetica;
-    text-decoration: none;
-    margin-left: 50px;
-    color: #D3AF5F;
-}
-
-.tab4 {
-    font-family: helvetica;
-    text-decoration: none;
-    margin-left: 50px;
-    color: #D3AF5F;
-}
-
-.tab5 {
-    font-family: helvetica;
-    text-decoration: none;
-    margin-left: 50px;
-    color: #D3AF5F;
-}
-
 .winterSale {
-    top: -40px;
     display: flex;
     flex-direction: row;
+    margin: 10px auto;
 }
 
-.winterSale2 {
-    top: -40px;
-    display: flex;
-    flex-direction: row;
-}
-
-.winterSale3 {
-    top: -40px;
-    display: flex;
-    flex-direction: row;
-}
-
-.winterSale4 {
-    top: -40px;
-    display: flex;
-    flex-direction: row;
-}
-
-.item1 {
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
 }
 
-.item1 img {
-    width: 100%;
-    height: 100%;
-}
-
-.item2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.item2 img {
-    width: 100%;
-    height: 100%;
-}
-
-.item3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.item3 img {
-    width: 100%;
-    height: 100%;
-}
-
-.item4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.item4 img {
+.item img {
     width: 100%;
     height: 100%;
 }
@@ -326,31 +265,7 @@ header .name {
     transition: all ease 0.5s;
 }
 
-.beenie {
-    text-transform: uppercase;
-    font-family: Helvetica;
-    color: rgb(56, 56, 56);
-    font-weight: 800;
-    text-shadow: 2px 2px #AAAAAA;
-}
-
-.pyjamas {
-    text-transform: uppercase;
-    font-family: Helvetica;
-    color: rgb(56, 56, 56);
-    font-weight: 800;
-    text-shadow: 2px 2px #AAAAAA;
-}
-
-.trackSuit {
-    text-transform: uppercase;
-    font-family: Helvetica;
-    color: rgb(56, 56, 56);
-    font-weight: 800;
-    text-shadow: 2px 2px #AAAAAA;
-}
-
-.hoodie {
+.itemName {
     text-transform: uppercase;
     font-family: Helvetica;
     color: rgb(56, 56, 56);
@@ -367,3 +282,8 @@ header .name {
     align-items: center;
     padding: 15px;
 }
+
+::selection {
+    background: #ddcca6;
+  }
+
